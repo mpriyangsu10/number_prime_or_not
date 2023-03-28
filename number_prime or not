@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int prime(int n){
+    int count=0;
+    for(int i=2;i<n;i++){
+     if(n%i==0){
+        count++ ;//here we chake if devided then print prime if fals then print nonprime
+     }
+    }
+      if(count==0){
+            cout<<"  prime number is";
+              return n;
+         
+     }
+     else{
+         cout<<" not prime ";
+         return n;
+     }
+     
+   
+    }
+
+
+
+int main() {
+    int n;
+    cout<<"enter your number ";
+    cin>>n;
+   cout<<prime(n);
+
+    return 0;
+}
